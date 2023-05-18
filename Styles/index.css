@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+:root {
+  --clr-prime: hsl(172, 67%, 45%);
+  --clr-d-cyn1: hsl(183, 100%, 15%);
+  --clr-d-cyn2: hsl(186, 14%, 43%);
+  --clr-l-cyn1: hsl(184, 14%, 56%);
+  --clr-l-cyn2: hsl(185, 41%, 84%);
+  --clr-l-cyn3: hsl(189, 41%, 97%);
+  --clr-wht: hsl(0, 0%, 100%);
+  --ff-SM-normal: "Space Mono", sans-serif;
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 700;
+}
+
+/* set up the body */
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--ff-SM-normal);
+  font-size: 24px;
+  color: var(--clr-d-cyn1);
+  background-color: var(--clr-l-cyn2);
+  min-height: 100vh;
+  text-align: center;
+}
+
+.title {
+  line-height: 1;
+}
