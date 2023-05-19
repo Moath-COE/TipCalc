@@ -27,8 +27,11 @@ h4,
 h5,
 p,
 figure,
-picture {
+picture,
+ul {
   margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 h1,
@@ -44,7 +47,8 @@ p {
 /* set up the body */
 body {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   font-family: var(--ff-SM-normal);
   font-size: 24px;
@@ -54,6 +58,200 @@ body {
   text-align: center;
 }
 
+/* styling */
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10%;
+}
+
 .title {
-  line-height: 1;
+  line-height: 0.8;
+  margin-bottom: 60px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  row-gap: 20px;
+  min-width: 45%;
+  background-color: var(--clr-wht);
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.232);
+}
+
+.input-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: flex-start;
+  color: var(--clr-d-cyn2);
+  width: 50%;
+  height: 100%;
+}
+
+.bill,
+.people-num {
+  text-align: start;
+  width: 100%;
+}
+
+.inbt1 {
+  display: flex;
+  align-items: center;
+}
+
+#bill-in-box,
+#pnum-in-box {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  padding: 25px 10px;
+  text-align: end;
+  background-color: var(--clr-l-cyn3);
+  border: none;
+  border-radius: 5px;
+  color: var(--clr-d-cyn1);
+  font-family: var(--ff-SM-normal);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.inbt1 img {
+  position: absolute;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tip {
+  text-align: start;
+  width: 100%;
+}
+
+.tip-btns {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tip-btn {
+  width: 30%;
+}
+
+.tip-btn button,
+.tip-btn input {
+  width: 100%;
+  padding: 8px 0px;
+  background-color: var(--clr-d-cyn1);
+  font-family: var(--ff-SM-normal);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--clr-wht);
+  border: none;
+  border-radius: 5px;
+}
+
+.tip-btn input {
+  text-align: center;
+}
+
+.tip-btn button:hover,
+.tip-btn button:active {
+  background-color: var(--clr-prime);
+  color: var(--clr-d-cyn1);
+  cursor: pointer;
+}
+
+.tip-btn input {
+  background-color: var(--clr-l-cyn3);
+  color: var(--clr-d-cyn2);
+}
+
+/* Works for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.output-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--clr-wht);
+  background-color: var(--clr-d-cyn1);
+  width: 50%;
+  padding: 40px;
+  border-radius: 20px;
+  margin-left: 8%;
+}
+
+.values {
+  width: 100%;
+}
+
+.tip-amount,
+.total {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tip-amount h4,
+.total h4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.tip-amount h4 span,
+.total h4 span {
+  font-size: 15px;
+  color: var(--clr-l-cyn1);
+}
+
+.big-num {
+  font-size: 35px;
+  color: var(--clr-prime);
+}
+
+.reset {
+  width: 100%;
+  padding: 8px 20px;
+  background-color: var(--clr-prime);
+  font-family: var(--ff-SM-normal);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--clr-d-cyn1);
+  border: none;
+  border-radius: 5px;
+}
+
+.reset:hover {
+  background-color: var(--clr-l-cyn2);
+  cursor: pointer;
+}
+
+.reset[disabled] {
+  background-color: var(--clr-l-cyn1);
+  cursor: auto;
 }
