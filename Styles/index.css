@@ -78,6 +78,7 @@ h4 {
   font-size: 20px;
 }
 
+/* main container styling */
 .container {
   display: flex;
   justify-content: center;
@@ -89,6 +90,7 @@ h4 {
   box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.232);
 }
 
+/* input part styling */
 .input-cont {
   display: flex;
   flex-direction: column;
@@ -194,6 +196,7 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+/* output part styling */
 .output-cont {
   display: flex;
   flex-direction: column;
@@ -259,3 +262,5 @@ input[type="number"] {
   background-color: var(--clr-l-cyn1);
   cursor: auto;
 }
+
+/* Mobile styling section */
