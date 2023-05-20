@@ -1,3 +1,4 @@
+// variables declaring
 const billAmount = document.getElementById("bill-in-box");
 const btns = document.querySelector(".tip-btns");
 const peopleNum = document.getElementById("pnum-in-box");
@@ -9,12 +10,16 @@ let amount = 0;
 let pNum = 0;
 let factor = 0;
 
+// event listeners
+
+// amount input box handler
 billAmount.addEventListener("change", (e) => {
   e.preventDefault();
   amount = e.target.value;
   valid();
 });
 
+// custom tip amount handler
 customFactor.addEventListener("change", (e) => {
   e.preventDefault();
   for (y of btns.children) {
@@ -25,6 +30,7 @@ customFactor.addEventListener("change", (e) => {
   valid();
 });
 
+// tip amount buttons handler
 btns.addEventListener("click", (e) => {
   if (e.target.nodeName === "BUTTON") {
     customFactor.firstElementChild.value = "";
@@ -37,12 +43,14 @@ btns.addEventListener("click", (e) => {
   }
 });
 
+// number of people input box handler
 peopleNum.addEventListener("change", (e) => {
   e.preventDefault();
   pNum = e.target.value;
   valid();
 });
 
+// updating results function
 function valid() {
   if (amount != 0 && factor != 0 && pNum != 0) {
     let x = (Number.parseInt(amount) + amount * factor).toFixed(2);
@@ -52,6 +60,7 @@ function valid() {
   }
 }
 
+// reset button handler
 resetBtn.addEventListener("click", (e) => {
   e.preventDefault();
   valueAmount.innerHTML = "0.00";
