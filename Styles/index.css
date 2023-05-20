@@ -174,7 +174,7 @@ input::-webkit-inner-spin-button {
 }
 
 .tip-btn button:hover,
-.tip-btn button:active {
+.tip-btn button[active="true"] {
   background-color: var(--clr-prime);
   color: var(--clr-d-cyn1);
   cursor: pointer;
@@ -183,6 +183,10 @@ input::-webkit-inner-spin-button {
 .tip-btn input {
   background-color: var(--clr-l-cyn3);
   color: var(--clr-d-cyn2);
+}
+
+.tip-btn input[active="true"] {
+  border: 2px solid var(--clr-prime);
 }
 
 /* Works for Firefox */
@@ -234,7 +238,7 @@ input[type="number"] {
   color: var(--clr-prime);
 }
 
-.reset {
+#reset {
   width: 100%;
   padding: 8px 20px;
   background-color: var(--clr-prime);
@@ -246,12 +250,12 @@ input[type="number"] {
   border-radius: 5px;
 }
 
-.reset:hover {
+#reset:hover {
   background-color: var(--clr-l-cyn2);
   cursor: pointer;
 }
 
-.reset[disabled] {
+#reset[active="false"] {
   background-color: var(--clr-l-cyn1);
   cursor: auto;
 }
