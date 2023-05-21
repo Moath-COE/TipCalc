@@ -8,6 +8,7 @@
   --clr-l-cyn2: hsl(185, 41%, 84%);
   --clr-l-cyn3: hsl(189, 41%, 97%);
   --clr-wht: hsl(0, 0%, 100%);
+  --clr-err: hsl(15, 74%, 53%);
   --ff-SM-normal: "Space Mono", sans-serif;
 }
 
@@ -71,11 +72,11 @@ body {
 
 .title {
   line-height: 0.8;
-  margin-bottom: 60px;
 }
 
 h4 {
   font-size: 20px;
+  display: inline;
 }
 
 /* main container styling */
@@ -87,6 +88,7 @@ h4 {
   background-color: var(--clr-wht);
   padding: 35px;
   border-radius: 20px;
+  margin-top: 60px;
   box-shadow: 3px 3px 40px rgba(0, 0, 0, 0.232);
 }
 
@@ -263,4 +265,38 @@ input[type="number"] {
   cursor: auto;
 }
 
+/* error masseges */
+
+.error {
+  color: var(--clr-err);
+  font-size: 15px;
+}
+
+.error-border {
+  border: 1px solid var(--clr-err) !important;
+}
+
 /* Mobile styling section */
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+  }
+
+  .input-cont,
+  .output-cont {
+    width: 100%;
+  }
+
+  .output-cont {
+    margin-left: 0;
+    padding: 30px;
+  }
+
+  .tip-btn {
+    width: 47%;
+  }
+}
