@@ -66,7 +66,7 @@ btns.addEventListener("click", (e) => {
 // number of people input box handler
 peopleNum.addEventListener("change", (e) => {
   e.preventDefault();
-  if (!e.target.validity.stepMismatch) {
+  if (!e.target.validity.stepMismatch && e.target.value > 0) {
     e.target.classList.remove("error-border");
     e.target.setCustomValidity("");
     error2.innerHTML = "";
