@@ -28,8 +28,7 @@ Users should be able to:
 
 ![image](images\Screenshot 2023-05-21 140055.png)
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Go to website](https://moath-coe.github.io/TipCalc/)
 
 ## My process
 
